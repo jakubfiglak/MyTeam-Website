@@ -1,3 +1,2 @@
-body {
-  font-family: Arial, sans-serif;
-}
+@include variables;
+@include config;
