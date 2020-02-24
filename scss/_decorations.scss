@@ -1,0 +1,21 @@
+.line {
+  width: 50px;
+  height: 4px;
+  background: $primary-color-mid;
+  margin-block-end: 2.4rem;
+}
+
+.pattern {
+  position: absolute;
+
+  &-bottom {
+    left: 0;
+    bottom: 0;
+  }
+
+  &-top-right {
+    width: 200px;
+    right: -100px;
+    top: 0;
+  }
+}

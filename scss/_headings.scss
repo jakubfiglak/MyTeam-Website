@@ -1,0 +1,12 @@
+.main-heading {
+  font-size: 4rem;
+  padding: 0 5rem;
+
+  &__emphasize {
+    color: $primary-color-mid;
+  }
+}
+
+.section-heading {
+  font-size: 3.2rem;
+}

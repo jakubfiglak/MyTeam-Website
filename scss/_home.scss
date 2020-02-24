@@ -1,0 +1,19 @@
+.welcome {
+  position: relative;
+  background: $primary-color-dark;
+  height: 100vh;
+}
+
+.features {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1fr;
+  background: $tertiary-color-light;
+
+  &__heading {
+    text-align: left;
+    padding: 6.4rem 8rem 0 2.4rem;
+  }
+}

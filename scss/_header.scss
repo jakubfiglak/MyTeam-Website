@@ -1,0 +1,24 @@
+.header {
+  background: $primary-color-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.8rem 2.4rem;
+
+  .logo {
+    line-height: 1;
+
+    &__img {
+      width: 80%;
+    }
+  }
+
+  &__btn {
+    background: 0;
+    border: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}

@@ -7,6 +7,7 @@
 html {
   font-family: $font-stack;
   font-size: 10px;
+  color: #fff;
 }
 
 body {
@@ -17,15 +18,20 @@ body {
 
 h1 {
   font-size: 6.4rem;
-  line-height: 0.875;
+  line-height: 1.2;
 }
 
 h2 {
   font-size: 4.8rem;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 h3 {
   font-size: 1.8rem;
   line-height: 1.56;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
