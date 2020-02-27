@@ -37,6 +37,14 @@ img {
   width: 100%;
 }
 
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .line {
   width: 50px;
   height: 4px;
@@ -51,10 +59,26 @@ img {
   left: 0;
   bottom: 0;
 }
+.pattern-bottom-right {
+  width: 200px;
+  right: 0;
+  bottom: 0;
+}
 .pattern-top-right {
   width: 200px;
   right: -100px;
   top: 0;
+}
+.pattern-top-left {
+  width: 147px;
+  top: 0;
+  left: 0;
+}
+.pattern-center {
+  width: 67px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
 }
 
 .header {
@@ -80,13 +104,12 @@ img {
 
 .main-heading {
   font-size: 4rem;
-  padding: 0 5rem;
 }
 .main-heading__emphasize {
   color: #f67e7e;
 }
 
-.section-heading {
+.quotes__heading, .features__heading {
   font-size: 3.2rem;
 }
 
@@ -95,6 +118,12 @@ img {
   background: #014e56;
   height: 100vh;
 }
+.welcome__content {
+  padding: 0 2.4rem;
+}
+.welcome__text {
+  padding-block-start: 1.8rem;
+}
 
 .features {
   position: relative;
@@ -102,17 +131,85 @@ img {
   justify-content: center;
   align-items: center;
   grid-column: 1fr;
+  gap: 2rem;
+  overflow: hidden;
   background: #012f34;
 }
 .features__heading {
   text-align: left;
-  padding: 6.4rem 8rem 0 2.4rem;
+  padding: 6.4rem 8rem 4.8rem 2.4rem;
+}
+.features__content {
+  display: grid;
+  gap: 5rem;
+  margin-block-end: 6rem;
+}
+.features__element {
+  display: grid;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features__img {
+  width: 72px;
+  justify-self: center;
+}
+.features__title {
+  color: #f67e7e;
+}
+
+.quotes {
+  position: relative;
+  background: #014e56;
+  padding-block-end: 16.4rem;
+}
+.quotes__heading {
+  text-align: center;
+  padding: 14rem 2.4rem 0 2.4rem;
+}
+.quotes__heading--emphasize {
+  color: #79c8c7;
+}
+.quotes__content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-block-start: 8.4rem;
+  gap: 8.4rem;
+  padding: 0 2.4rem;
+}
+.quotes__element {
+  display: grid;
+  gap: 0.2rem;
+  position: relative;
+}
+.quotes__text {
+  z-index: 1;
+}
+.quotes__person-name {
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #79c8c7;
+  margin-block-start: 1.4rem;
+}
+.quotes__person-role {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.quotes__person-img {
+  width: 62px;
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+  justify-self: center;
+  margin-block-start: 1.4rem;
 }
 
 .text {
   font-size: 1.5rem;
   line-height: 1.7;
-  padding: 1.8rem 2.4rem;
 }
 
 .container {
