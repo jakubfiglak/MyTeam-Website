@@ -15,7 +15,7 @@
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
   </head>
   <body>
-    <div class="container">
+    <p class="container">
       <section class="welcome">
         <header class="header">
           <div class="logo">
@@ -41,14 +41,17 @@
           </nav>
         </header>
 
-        <h1 class="main-heading">
-          Find the best <strong class="main-heading__emphasize">talent</strong>
-        </h1>
-        <p class="text">
-          Finding the right people and building high performing teams can be
-          hard. Most companies aren’t tapping into the abundance of global
-          talent. We’re about to change that.
-        </p>
+        <div class="welcome__content">
+          <h1 class="main-heading">
+            Find the best
+            <strong class="main-heading__emphasize">talent</strong>
+          </h1>
+          <p class="welcome__text">
+            Finding the right people and building high performing teams can be
+            hard. Most companies aren’t tapping into the abundance of global
+            talent. We’re about to change that.
+          </p>
+        </div>
 
         <img
           src="./images/bg-pattern-home-2.svg"
@@ -64,89 +67,122 @@
             src="./images/bg-pattern-home-3.svg"
             alt=""
           />
-          <h2 class="section-heading features__heading">
+          <h2 class="features__heading">
             <div class="line"></div>
             Build & manage distributed teams like no one else.
           </h2>
-          <div class="feature">
-            <img src="/images/icon-person.svg" alt="Person" />
-            <h3 class="feature__title">Experienced Individuals</h3>
-            <p class="text">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </p>
-          </div>
-          <div class="feature">
-            <img src="/images/icon-cog.svg" alt="Person" />
-            <h3 class="feature__title">Easy to Implement</h3>
-            <p class="text">
-              Our processes have been refined over years of implementation
-              meaning our teams always deliver.
-            </p>
-          </div>
-          <div class="feature">
-            <img src="/images/icon-chart.svg" alt="Person" />
-            <h3 class="feature__title">Enhanced Productivity</h3>
-            <p class="text">
-              Our customized platform with in-built analytics helps you manage
-              your distributed teams.
-            </p>
-          </div>
+          <div class="features__content">
+            <div class="features__element">
+              <img
+                src="/images/icon-person.svg"
+                alt="Person"
+                class="features__img"
+              />
+              <h3 class="features__title">Experienced Individuals</h3>
+              <p class="features__text">
+                Our network is made up of highly experienced professionals who are
+                passionate about what they do.
+              </p>
+            </div>
+            <div class="features__element">
+              <img src="/images/icon-cog.svg" alt="Cog" class="features__img" />
+              <h3 class="features__title">Easy to Implement</h3>
+              <p class="features__text">
+                Our processes have been refined over years of implementation
+                meaning our teams always deliver.
+              </p>
+            </div>
+            <div class="features__element">
+              <img
+                src="/images/icon-chart.svg"
+                alt="Chart"
+                class="features__img"
+              />
+              <h3 class="features__title">Enhanced Productivity</h3>
+              <p class="features__text">
+                Our customized platform with in-built analytics helps you manage
+                your distributed teams.
+              </p>
+            </div>
+          </div>      
         </section>
 
         <section class="quotes">
-          <h2 class="section-heading">
+          <img
+          src="./images/bg-pattern-home-4-about-3.svg"
+          alt=""
+          class="pattern pattern-top-left"
+        />
+          <h2 class="quotes__heading">
             Delivering real results for top companies. Some of our
-            <strong class="section-heading__emphasize">success stories.</strong>
+            <strong class="quotes__heading quotes__heading--emphasize">success stories.</strong>
           </h2>
-          <div class="quote">
-            <p class="text">
+          <div class="quotes__content">
+          <div class="quotes__element">
+            <img
+          src="./images/icon-quotes.svg"
+          alt=""
+          class="pattern pattern-center"
+        />
+            <p class="quotes__text">
               “The team perfectly fit the specialized skill set required. They
               focused on the most essential features helping us launch the
               platform eight months faster than planned.”
             </p>
-            <div class="person">
-              <p class="person__name">Kady Baker</p>
-              <p class="person__role">Product Manager at Bookmark</p>
+              <p class="quotes__person-name">Kady Baker</p>
+              <p class="quotes__person-role">Product Manager at Bookmark</p>
               <img
                 src="images/avatar-kady.jpg"
                 alt="Kady Baker"
-                class="person__img"
+                class="quotes__person-img"
               />
-            </div>
           </div>
-          <div class="quote">
-            <p class="text">
+
+          <div class="quotes__element">
+            <img
+            src="./images/icon-quotes.svg"
+            alt=""
+            class="pattern pattern-center"
+          />
+            <p class="quotes__text">
               “We needed to automate our entire onboarding process. The team
               came in and built out the whole journey. Since going live, user
               retention has gone through the roof!”
             </p>
-            <div class="person">
-              <p class="person__name">Aiysha Reese</p>
-              <p class="person__role">Founder of Manage</p>
+              <p class="quotes__person-name">Aiysha Reese</p>
+              <p class="quotes__person-role">Founder of Manage</p>
               <img
                 src="images/avatar-aiysha.jpg"
                 alt="Aiysha Reese"
-                class="person__img"
+                class="quotes__person-img"
               />
-            </div>
           </div>
-          <div class="quote">
-            <p class="text">
+
+          <div class="quotes__element">
+            <img
+            src="./images/icon-quotes.svg"
+            alt=""
+            class="pattern pattern-center"
+          />
+            <p class="quotes__text">
               “Amazing. Our team helped us build an app that delivered a new
               experience for hiring a physio. The launch was an instant success
               with 100k downloads in the first month.”
             </p>
-            <div class="person">
-              <p class="person__name">Arthur Clarke</p>
-              <p class="person__role">Co-founder of MyPhysio</p>
+              <p class="quotes__person-name">Arthur Clarke</p>
+              <p class="quotes__person-role">Co-founder of MyPhysio</p>
               <img
                 src="images/avatar-arthur.jpg"
                 alt="Arthur Clarke"
-                class="person__img"
+                class="quotes__person-img"
               />
-            </div>
           </div>
+        </div>
+        <img
+        src="./images/bg-pattern-home-5.svg"
+        alt=""
+        class="pattern pattern-bottom-right"
+      />
         </section>
 
         <section class="contact">
