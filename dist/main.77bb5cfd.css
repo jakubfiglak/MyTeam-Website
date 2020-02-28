@@ -64,6 +64,11 @@ img {
   right: 0;
   bottom: 0;
 }
+.pattern-bottom-right-overflow {
+  width: 200px;
+  right: -100px;
+  bottom: -100px;
+}
 .pattern-bottom-left {
   width: 200px;
   left: 0;
@@ -114,6 +119,7 @@ img {
 
 .welcome {
   position: relative;
+  overflow: hidden;
   background: #014e56;
   height: 100vh;
 }
@@ -281,6 +287,10 @@ img {
 .logo__img--small {
   width: 60%;
   margin: 0 auto;
+}
+
+.directors {
+  background: #004047;
 }
 
 .container {
