@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 2.4rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background: 0;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  font-family: $font-stack;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+
+  &--primary-dark {
+    color: $tertiary-color-light;
+    border: 2px solid $tertiary-color-light;
+
+    &:hover {
+      background: $tertiary-color-light;
+      color: $primary-color-light;
+    }
+  }
+}

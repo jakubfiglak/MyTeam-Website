@@ -2,7 +2,8 @@
 // @import 'config';
 // @import 'mixins';
 
-@import 'decorations', 'header', 'headings', 'home', 'text';
+@import 'decorations', 'header', 'headings', 'home', 'text', 'buttons', 'footer',
+  'logo';
 
 .container {
   margin: 0 auto;

@@ -1,0 +1,39 @@
+.footer {
+  @extend %flex-column-center;
+  padding: 6.6rem 2.4rem;
+  background: $tertiary-color-dark;
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__nav-element {
+    margin: 2.4rem 1.2rem;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $primary-color-light;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $primary-color-mid;
+    }
+  }
+
+  &__address,
+  &__text {
+    opacity: 0.6;
+  }
+
+  &__social {
+    display: flex;
+    margin: 4rem 0 1.6rem;
+  }
+
+  &__social-link {
+    margin: 0 0.8rem;
+  }
+}
