@@ -479,7 +479,12 @@ img {
   grid-template-columns: 1fr;
   gap: 2.4rem;
 }
+.contact-form__field {
+  border: 0;
+  display: flex;
+}
 .contact-form__input {
+  width: 100%;
   background: 0;
   border: 0;
   font-family: "Livvic", sans-serif;
@@ -502,8 +507,30 @@ img {
   outline: 0;
   border-color: #79c8c7;
 }
+.contact-form__error {
+  display: none;
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #f67e7e;
+  font-style: italic;
+  text-align: left;
+  padding: 0.8rem 0 0 1.4rem;
+}
 .contact-form__btn {
   justify-self: start;
+}
+
+.invalid:invalid {
+  border-color: #f67e7e;
+  color: #f67e7e;
+}
+.invalid::placeholder {
+  color: #f67e7e;
+}
+.invalid + .contact-form__error {
+  display: block;
+  opacity: 1;
 }
 
 .container {

@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./scss/main.scss">
+    <script src="./js/form.js" defer></script>
 
     <title>Frontend Mentor | myteam website challenge - Contact</title>
   </head>
@@ -52,28 +53,51 @@
           </div>
         </section>
 
-        <form class="contact-form">
-          <input type="text" class="contact-form__input" placeholder="Name" required />
-          <input
-            type="email"
-            class="contact-form__input"
-            placeholder="Email address"
-            required
-          />
-          <input
-            type="text"
-            class="contact-form__input"
-            placeholder="Company Name"
-            required
-          />
-          <input type="text" class="contact-form__input" placeholder="Title" required />
-          <textarea
-            cols="30"
-            rows="4"
-            class="contact-form__input contact-form__input--textarea"
-            placeholder="Message"
-            required
-          ></textarea>
+        <form class="contact-form" id="contact-form"  autocomplete="off">
+          <fieldset class="contact-form__field">
+            <input type="text" class="contact-form__input" placeholder="Name" id="name" required />
+            <small class="contact-form__error">This field is required</small>
+          </fieldset>
+          
+          <fieldset class="contact-form__field">
+            <input
+              type="email"
+              class="contact-form__input"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+            <small class="contact-form__error">This field is required</small>
+          </fieldset>
+
+          <fieldset class="contact-form__field">
+            <input
+              type="text"
+              class="contact-form__input"
+              id="company-name"
+              placeholder="Company Name"
+              required
+            />
+            <small class="contact-form__error">This field is required</small>
+          </fieldset>
+
+          <fieldset class="contact-form__field">
+            <input type="text" class="contact-form__input" placeholder="Title" id="title" required />
+            <small class="contact-form__error">This field is required</small>
+          </fieldset>
+
+          <fieldset class="contact-form__field">
+            <textarea
+              cols="30"
+              rows="4"
+              class="contact-form__input contact-form__input--textarea"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <small class="contact-form__error">This field is required</small>
+          </fieldset>
+
           <input type="submit" class="btn btn--secondary contact-form__btn" value="submit" />
         </form>
 
