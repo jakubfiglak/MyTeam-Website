@@ -66,13 +66,24 @@
     font-family: $font-stack;
     font-weight: 600;
     font-size: 1.5rem;
-    color: $primary-color-mid;
+    color: $primary-color-light;
     border-block-end: 1px solid $primary-color-light;
     padding: 0 0 1.7rem 1.4rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &--textarea {
+      resize: none;
+    }
 
     &::placeholder {
       color: $primary-color-light;
       opacity: 0.6;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $secondary-color-light;
     }
   }
 
