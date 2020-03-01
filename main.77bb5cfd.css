@@ -249,6 +249,13 @@ img {
   background: #012f34;
   color: white;
 }
+.btn--secondary {
+  background: white;
+  border: 0;
+}
+.btn--secondary:hover {
+  background: #79c8c7;
+}
 
 .footer {
   padding: 6.6rem 2.4rem;
@@ -417,9 +424,86 @@ img {
   justify-self: center;
 }
 
+.contact-main-content {
+  position: relative;
+  overflow: hidden;
+  background: #014e56;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5.6rem;
+  padding-block-end: 8.8rem;
+}
+.contact-main-content__pattern {
+  position: absolute;
+  width: 225px;
+  bottom: -125px;
+  right: -112.5px;
+}
+
+.ask {
+  padding: 3.2rem 2.4rem 0;
+}
+.ask__heading {
+  font-size: 4rem;
+  line-height: 1;
+}
+.ask__subheading {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: #f67e7e;
+  margin-block-start: 0.8rem;
+}
+.ask__topics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  margin-block-start: 4rem;
+}
+.ask__topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ask__img {
+  width: 72px;
+}
+.ask__text {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-inline-start: 2.3rem;
+}
+
+.contact-form {
+  display: grid;
+  padding: 0 2.4rem;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+.contact-form__input {
+  background: 0;
+  border: 0;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #f67e7e;
+  border-block-end: 1px solid white;
+  padding: 0 0 1.7rem 1.4rem;
+}
+.contact-form__input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+.contact-form__btn {
+  justify-self: start;
+}
+
 .container {
   margin: 0 auto;
   text-align: center;
+}
+
+.main-content {
+  background: #014e56;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

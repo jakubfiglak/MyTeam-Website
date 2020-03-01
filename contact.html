@@ -5,51 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
 
     <title>Frontend Mentor | myteam website challenge - Contact</title>
-  </head>
+  <script src="/main.77bb5cfd.js"></script></head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="logo">
-          <img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img">
-        </div>
+        <div class="logo"><img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img"></div>
         <button class="header__btn" id="menu-open">
           <img src="/icon-hamburger.cb455b0f.svg" alt="menu open icon">
         </button>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list-element">
-              <a href="/index.html" class="main-nav__link">home</a>
-            </li>
-            <li class="main-nav__list-element">
-              <a href="/about.html" class="main-nav__link">about</a>
-            </li>
-            <li class="main-nav__list-element">
-              <a href="/contact.html" class="main-nav__link btn btn--primary">contact us</a>
-            </li>
-          </ul>
+            <li class="main-nav__list-element"><a href="/index.html" class="main-nav__link">home</a></li>
+            <li class="main-nav__list-element"><a href="/about.html" class="main-nav__link">about</a></li>
+            <li class="main-nav__list-element"><a href="/contact.html" class="main-nav__link btn--secondary">contact us
+          </a></li></ul>
         </nav>
       </header>
 
-      <main class="main-content">
-        <section class="contact-welcome">
-          <h2 class="section-heading">Contact</h2>
-          <h3 class="section-subheading">Ask us about</h3>
-          <div class="contact__topics">
-            <div class="contact__topic">
-              <img src="/icon-person.95411073.svg" alt="">
-              <p class="text--emphasize">The quality of our talent network</p>
+      <main class="contact-main-content">
+        <section class="ask">
+          <h2 class="ask__heading">Contact</h2>
+          <p class="ask__subheading">Ask us about</p>
+          <div class="ask__topics">
+            <div class="ask__topic">
+              <img src="/icon-person.95411073.svg" alt="" class="ask__img">
+              <p class="ask__text">The quality of our talent network</p>
             </div>
-            <div class="contact__topic">
-              <img src="/icon-cog.167c3161.svg" alt="">
-              <p class="text--emphasize">
+            <div class="ask__topic">
+              <img src="/icon-cog.167c3161.svg" alt="" class="ask__img">
+              <p class="ask__text">
                 Usage & implementation of our software
               </p>
             </div>
-            <div class="contact__topic">
-              <img src="/icon-chart.4be29882.svg" alt="">
-              <p class="text--emphasize">How we help drive innovation</p>
+            <div class="ask__topic">
+              <img src="/icon-chart.4be29882.svg" alt="" class="ask__img">
+              <p class="ask__text">How we help drive innovation</p>
             </div>
           </div>
         </section>
@@ -59,35 +52,40 @@
           <input type="email" class="contact-form__input" placeholder="Email address">
           <input type="text" class="contact-form__input" placeholder="Company Name">
           <input type="text" class="contact-form__input" placeholder="Title">
-          <textarea cols="30" rows="10" class="contact-form__input" placeholder="Message"></textarea>
-          <input type="submit" class="btn btn--secondary">
+          <textarea cols="30" rows="4" class="contact-form__input contact-form__input--textarea" placeholder="Message"></textarea>
+          <input type="submit" class="btn btn--secondary contact-form__btn" value="submit">
         </form>
+
+        <img src="/bg-pattern-contact-2.98f62718.svg" alt="" class="contact-main-content__pattern">
       </main>
 
       <footer class="footer">
-        <div class="footer__logo">myteam</div>
+        <div class="logo"><img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img--small"></div>
         <nav class="footer__nav">
-          <li class="nav__list">
-            <ul class="nav__list-element">
-              <a href="/index.html" class="nav__link">home</a>
-            </ul>
-            <ul class="nav__list-element">
-              <a href="/about.html" class="nav__link">about</a>
-            </ul>
-          </li>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-element">
+              <a href="/index.html" class="footer__nav-link">home</a>
+            </li>
+            <li class="footer__nav-element">
+              <a href="/about.html" class="footer__nav-link">about</a>
+            </li>
+          </ul>
         </nav>
         <address class="footer__address">
-          987 Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432
+          <p class="footer__address-line">987 Hillcrest Lane</p>
+          <p class="footer__address-line">Irvine, CA</p>
+          <p class="footer__address-line">California 92714</p>
+          <p class="footer__address-line">Call Us : 949-833-7432</p> 
         </address>
-        <div class="social">
-          <a href="http://facebook.com" class="social__link">
-            <img src="/icon-facebook.db88fd38.svg" alt="Facebook" class="social__icon"></a>
-          <a href="http://pinterest.com" class="social__link">
-            <img src="/icon-pinterest.6b47e241.svg" alt="Pinterest" class="social__icon"></a>
-          <a href="http://twitter.com" class="social__link">
-            <img src="/icon-twitter.9dcd00ee.svg" alt="Twitter" class="social__icon"></a>
+        <div class="footer__social">
+          <a href="http://facebook.com" class="footer__social-link">
+            <img src="/icon-facebook.db88fd38.svg" alt="Facebook" class="footer__social-icon"></a>
+          <a href="http://pinterest.com" class="footer__social-link">
+            <img src="/icon-pinterest.6b47e241.svg" alt="Pinterest" class="footer__social-icon"></a>
+          <a href="http://twitter.com" class="footer__social-link">
+            <img src="/icon-twitter.9dcd00ee.svg" alt="Twitter" class="footer__social-icon"></a>
         </div>
-        <p class="text">Copyright 2020. All Rights Reserved</p>
+        <p class="footer__text">Copyright 2020. All Rights Reserved</p>
       </footer>
     </div>
   </body>
