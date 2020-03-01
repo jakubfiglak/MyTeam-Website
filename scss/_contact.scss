@@ -1,0 +1,82 @@
+.contact-main-content {
+  position: relative;
+  overflow: hidden;
+  background: $primary-color-dark;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5.6rem;
+  padding-block-end: 8.8rem;
+
+  &__pattern {
+    position: absolute;
+    width: 225px;
+    bottom: -125px;
+    right: -112.5px;
+  }
+}
+
+.ask {
+  padding: 3.2rem 2.4rem 0;
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  &__subheading {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: $primary-color-mid;
+    margin-block-start: 0.8rem;
+  }
+
+  &__topics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-block-start: 4rem;
+  }
+
+  &__topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    width: 72px;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-inline-start: 2.3rem;
+  }
+}
+
+.contact-form {
+  display: grid;
+  padding: 0 2.4rem;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+
+  &__input {
+    background: 0;
+    border: 0;
+    font-family: $font-stack;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $primary-color-mid;
+    border-block-end: 1px solid $primary-color-light;
+    padding: 0 0 1.7rem 1.4rem;
+
+    &::placeholder {
+      color: $primary-color-light;
+      opacity: 0.6;
+    }
+  }
+
+  &__btn {
+    justify-self: start;
+  }
+}

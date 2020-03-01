@@ -1,11 +1,13 @@
 @import 'variables', 'config', 'mixins';
-// @import 'config';
-// @import 'mixins';
 
 @import 'decorations', 'header', 'headings', 'home', 'text', 'buttons', 'footer',
-  'logo', 'about';
+  'logo', 'about', 'contact';
 
 .container {
   margin: 0 auto;
   text-align: center;
+}
+
+.main-content {
+  background: $primary-color-dark;
 }
