@@ -485,13 +485,22 @@ img {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  color: #f67e7e;
+  color: white;
   border-block-end: 1px solid white;
   padding: 0 0 1.7rem 1.4rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.contact-form__input--textarea {
+  resize: none;
 }
 .contact-form__input::placeholder {
   color: white;
   opacity: 0.6;
+}
+.contact-form__input:focus {
+  outline: 0;
+  border-color: #79c8c7;
 }
 .contact-form__btn {
   justify-self: start;
