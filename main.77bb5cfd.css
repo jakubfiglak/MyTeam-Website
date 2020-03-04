@@ -55,61 +55,7 @@ img {
 .header__btn {
   background: 0;
   border: 0;
-}
-.header .main-nav {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  display: none;
-  opacity: 0;
-  transition: all 0.3s ease-in;
-  z-index: 2;
-  overflow: hidden;
-}
-.header .main-nav--open {
-  display: block;
-  opacity: 1;
-}
-.header .main-nav__btn {
-  position: absolute;
-  z-index: 5;
-  background: 0;
-  border: 0;
   cursor: pointer;
-  top: 5.6rem;
-  right: 2.5rem;
-}
-.header .main-nav__list {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 100%;
-  background: #2c6269;
-  list-style: none;
-  padding: 11.2rem 0 0 4.8rem;
-  text-align: left;
-}
-.header .main-nav__list-element {
-  margin-block-end: 2.4rem;
-}
-.header .main-nav__list-element--btn {
-  margin-block-start: 3.6rem;
-}
-.header .main-nav__link {
-  text-decoration: none;
-  color: white;
-  font-size: 1.8rem;
-  line-height: 1.56;
-}
-.header .main-nav__pattern {
-  position: absolute;
-  width: 200px;
-  bottom: 0;
-  right: -100px;
 }
 
 .main-heading {
@@ -595,6 +541,69 @@ img {
 .invalid + .contact-form__error {
   display: block;
   opacity: 1;
+}
+
+.nav-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+.nav-container--visible {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.side-nav {
+  position: absolute;
+  top: 0;
+  right: -500px;
+  width: 70%;
+  height: 100%;
+  background: #2c6269;
+  transition: all 0.4s ease-in;
+}
+.side-nav--open {
+  right: 0;
+}
+.side-nav__btn {
+  position: absolute;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  top: 5.6rem;
+  right: 2.5rem;
+}
+.side-nav__list {
+  list-style: none;
+  padding: 11.2rem 0 0 4.8rem;
+  text-align: left;
+}
+.side-nav__list-element {
+  margin-block-end: 2.4rem;
+}
+.side-nav__list-element--btn {
+  margin-block-start: 3.6rem;
+}
+.side-nav__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1.56;
+}
+.side-nav__pattern {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: -100px;
 }
 
 .container {
