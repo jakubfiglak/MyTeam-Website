@@ -7,23 +7,37 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
     <link rel="stylesheet" href="/main.77bb5cfd.css">
     <script src="/form.90d872a0.js" defer=""></script>
-
+    <script src="/hamburger.36b634ef.js" defer=""></script>
     <title>Frontend Mentor | myteam website challenge - Contact</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="logo"><img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img"></div>
+        <div class="logo">
+          <img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img">
+        </div>
         <button class="header__btn" id="menu-open">
           <img src="/icon-hamburger.cb455b0f.svg" alt="menu open icon">
         </button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-element"><a href="/index.html" class="main-nav__link">home</a></li>
-            <li class="main-nav__list-element"><a href="/about.html" class="main-nav__link">about</a></li>
-            <li class="main-nav__list-element"><a href="/contact.html" class="main-nav__link btn--secondary">contact us
-          </a></li></ul>
-        </nav>
+        <aside class="nav-container" id="nav-container">
+          <nav class="side-nav" id="side-nav">
+            <button class="side-nav__btn" id="menu-close">
+              <img src="/icon-close.1add023a.svg" alt="menu close icon">
+            </button>
+            <ul class="side-nav__list">
+              <li class="side-nav__list-element">
+                <a href="/index.html" class="side-nav__link">home</a>
+              </li>
+              <li class="side-nav__list-element">
+                <a href="/about.html" class="side-nav__link">about</a>
+              </li>
+              <li class="side-nav__list-element side-nav__list-element--btn">
+                <a href="/contact.html" class="side-nav__link side-nav__link btn btn--primary-light">contact us</a>
+              </li>
+            </ul>
+            <img src="/bg-pattern-about-1-mobile-nav-1.fbd23b7d.svg" alt="" class="side-nav__pattern">
+          </nav>
+        </aside>
       </header>
 
       <main class="contact-main-content">
@@ -53,7 +67,7 @@
             <input type="text" class="contact-form__input" placeholder="Name" id="name" required="">
             <small class="contact-form__error">This field is required</small>
           </fieldset>
-          
+
           <fieldset class="contact-form__field">
             <input type="email" class="contact-form__input" id="email" placeholder="Email address" required="">
             <small class="contact-form__error">This field is required</small>
@@ -81,7 +95,9 @@
       </main>
 
       <footer class="footer">
-        <div class="logo"><img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img--small"></div>
+        <div class="logo">
+          <img src="/logo.236e4034.svg" alt="myteam logo" class="logo__img--small">
+        </div>
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-element">
@@ -96,7 +112,7 @@
           <p class="footer__address-line">987 Hillcrest Lane</p>
           <p class="footer__address-line">Irvine, CA</p>
           <p class="footer__address-line">California 92714</p>
-          <p class="footer__address-line">Call Us : 949-833-7432</p> 
+          <p class="footer__address-line">Call Us : 949-833-7432</p>
         </address>
         <div class="footer__social">
           <a href="http://facebook.com" class="footer__social-link">
