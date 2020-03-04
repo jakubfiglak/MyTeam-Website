@@ -9,6 +9,16 @@
   font-weight: 600;
   transition: all 0.2s ease-in;
 
+  &--primary-light {
+    color: $primary-color-light;
+    border: 2px solid $primary-color-light;
+
+    &:hover {
+      color: $tertiary-color-dark;
+      background: $primary-color-light;
+    }
+  }
+
   &--primary-dark {
     color: $tertiary-color-light;
     border: 2px solid $tertiary-color-light;

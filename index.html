@@ -24,7 +24,10 @@
           <button class="header__btn" id="menu-open">
             <img src="/images/icon-hamburger.svg" alt="menu open icon" />
           </button>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--open">
+            <button class="main-nav__btn" id="menu-close">
+              <img src="/images/icon-close.svg" alt="menu close icon" />
+            </button>
             <ul class="main-nav__list">
               <li class="main-nav__list-element">
                 <a href="index.html" class="main-nav__link">home</a>
@@ -32,12 +35,19 @@
               <li class="main-nav__list-element">
                 <a href="about.html" class="main-nav__link">about</a>
               </li>
-              <li class="main-nav__list-element">
-                <a href="contact.html" class="main-nav__link btn btn--primary"
+              <li class="main-nav__list-element main-nav__list-element--btn">
+                <a
+                  href="contact.html"
+                  class="main-nav__link main-nav__link btn btn--primary-light"
                   >contact us</a
                 >
               </li>
             </ul>
+            <img
+              src="./images/bg-pattern-about-1-mobile-nav-1.svg"
+              alt=""
+              class="main-nav__pattern"
+            />
           </nav>
         </header>
 

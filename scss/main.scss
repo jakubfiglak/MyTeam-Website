@@ -1,7 +1,7 @@
 @import 'variables', 'config', 'mixins';
 
-@import 'decorations', 'header', 'headings', 'home', 'text', 'buttons', 'footer',
-  'logo', 'about', 'contact';
+@import 'header', 'headings', 'home', 'text', 'buttons', 'footer', 'logo',
+  'about', 'contact';
 
 .container {
   margin: 0 auto;
