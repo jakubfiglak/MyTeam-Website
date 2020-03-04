@@ -1,3 +1,12 @@
+.welcome {
+  &__pattern-right {
+    position: absolute;
+    width: 200px;
+    right: -100px;
+    bottom: -100px;
+  }
+}
+
 .directors {
   position: relative;
   overflow: hidden;
