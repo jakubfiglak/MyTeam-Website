@@ -52,10 +52,20 @@ img {
   align-items: center;
   padding: 4.8rem 2.4rem;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 6.4rem 4rem;
+  }
+}
 .header__btn {
   background: 0;
   border: 0;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
 }
 
 .main-heading {
@@ -83,7 +93,9 @@ img {
 }
 .welcome__pattern {
   position: absolute;
-  left: 0;
+  width: 358px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
 }
 
@@ -126,6 +138,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 2.4rem;
 }
 .features__img {
   width: 72px;
@@ -604,6 +617,32 @@ img {
   width: 200px;
   bottom: 0;
   right: -100px;
+}
+
+.main-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: block;
+  }
+}
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.main-nav__list-element {
+  margin-inline-start: 2rem;
+}
+.main-nav__list-element--btn {
+  margin-inline-start: 22rem;
+}
+.main-nav__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
 }
 
 .container {
