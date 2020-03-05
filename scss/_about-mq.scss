@@ -1,0 +1,27 @@
+@media #{$tablet} {
+  .welcome {
+    &__pattern-right {
+      bottom: 0;
+    }
+  }
+
+  .directors {
+    padding: 10rem 10rem 12.8rem 10rem;
+
+    &__pattern {
+      &--top-left {
+        top: 0;
+      }
+    }
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.1rem;
+      row-gap: 7.6rem;
+    }
+  }
+
+  .clients {
+    // display: flex;
+  }
+}
