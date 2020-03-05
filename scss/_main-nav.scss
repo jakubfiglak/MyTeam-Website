@@ -1,0 +1,28 @@
+.main-nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__list-element {
+    margin-inline-start: 2rem;
+
+    &--btn {
+      margin-inline-start: 22rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-color-light;
+    font-size: 1.8rem;
+  }
+}
