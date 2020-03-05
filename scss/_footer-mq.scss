@@ -1,0 +1,39 @@
+@media #{$tablet} {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5.6rem 4rem;
+    justify-items: start;
+
+    &__nav-list {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &__nav-element {
+      margin: 0 2.4rem 0 0;
+    }
+
+    &__address {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      justify-self: end;
+      text-align: right;
+      padding-block-end: 3.4rem;
+    }
+
+    &__social {
+      grid-column: 1;
+      grid-row: 3;
+      align-self: end;
+      margin: 0;
+    }
+
+    &__text {
+      grid-column: 2;
+      grid-row: 3;
+      justify-self: end;
+      align-self: end;
+      text-align: right;
+    }
+  }
+}

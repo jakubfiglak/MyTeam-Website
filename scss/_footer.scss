@@ -1,10 +1,13 @@
 .footer {
-  @extend %flex-column-center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding: 6.6rem 2.4rem;
   background: $tertiary-color-dark;
 
   &__nav-list {
     display: flex;
+    justify-self: center;
     list-style: none;
   }
 

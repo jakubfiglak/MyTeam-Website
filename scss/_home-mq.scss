@@ -32,4 +32,26 @@
       grid-row: span 2;
     }
   }
+
+  .quotes {
+    padding: 10rem;
+
+    &__heading {
+      padding: 0;
+    }
+
+    &__content {
+      padding: 0;
+    }
+  }
+
+  .contact {
+    flex-direction: row;
+    padding: 8.4rem;
+    justify-content: space-between;
+
+    &__heading {
+      margin: 0;
+    }
+  }
 }
