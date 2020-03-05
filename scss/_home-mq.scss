@@ -1,0 +1,35 @@
+@media #{$tablet} {
+  .welcome {
+    height: 700px;
+
+    &__content {
+      padding: 4.8rem 4rem 0;
+    }
+
+    &__text {
+      padding: 2.4rem 11rem;
+    }
+  }
+
+  .features {
+    padding: 10rem;
+
+    &__heading {
+      padding: 0 5rem 6.4rem 0;
+    }
+
+    &__content {
+      gap: 3.2rem;
+    }
+
+    &__element {
+      grid-template-columns: 100px 1fr;
+      text-align: left;
+      padding: 0;
+    }
+
+    &__img {
+      grid-row: span 2;
+    }
+  }
+}

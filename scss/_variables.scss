@@ -18,3 +18,9 @@ $border-color: rgb(196, 255, 254);
 @import url('https://fonts.googleapis.com/css?family=Livvic:400,600,700&display=swap');
 
 $font-stack: 'Livvic', sans-serif;
+
+// Breakpoints
+
+$tablet-breakpoint: 768px;
+
+$tablet: 'screen and (min-width: 768px)';

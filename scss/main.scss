@@ -3,6 +3,8 @@
 @import 'header', 'headings', 'home', 'text', 'buttons', 'footer', 'logo',
   'about', 'contact', 'side-nav', 'main-nav';
 
+@import 'home-mq';
+
 .container {
   margin: 0 auto;
   text-align: center;
