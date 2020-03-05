@@ -29,7 +29,8 @@
     }
 
     &__content {
-      grid-template-columns: repeat(5, 100px);
+      grid-template-columns: repeat(5, 1fr);
+      gap: 4rem;
     }
 
     &__logo {

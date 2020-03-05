@@ -1,0 +1,37 @@
+@media #{$tablet} {
+  .contact-main-content {
+    padding: 5rem 12.6rem 11.2rem;
+
+    &__pattern {
+      bottom: 0;
+    }
+
+    &__pattern-top {
+      display: block;
+      position: absolute;
+      width: 200px;
+      top: 80px;
+      left: -100px;
+    }
+
+    .ask {
+      padding: 0 2.4rem;
+
+      &__heading {
+        font-size: 6.4rem;
+      }
+
+      &__topics {
+        margin-block-start: 2.4rem;
+      }
+
+      &__topic {
+        justify-content: flex-start;
+      }
+    }
+
+    .contact-form {
+      padding: 0;
+    }
+  }
+}
