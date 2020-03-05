@@ -739,6 +739,23 @@ img {
     text-align: right;
   }
 }
+@media screen and (min-width: 768px) {
+  .welcome__pattern-right {
+    bottom: 0;
+  }
+
+  .directors {
+    padding: 10rem 10rem 12.8rem 10rem;
+  }
+  .directors__pattern--top-left {
+    top: 0;
+  }
+  .directors__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.1rem;
+    row-gap: 7.6rem;
+  }
+}
 .container {
   margin: 0 auto;
   text-align: center;
