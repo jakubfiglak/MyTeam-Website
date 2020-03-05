@@ -731,6 +731,9 @@ img {
     align-self: end;
     margin: 0;
   }
+  .footer__social-link {
+    margin: 0 1.6rem 0 0;
+  }
   .footer__text {
     grid-column: 2;
     grid-row: 3;
@@ -754,6 +757,19 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.1rem;
     row-gap: 7.6rem;
+  }
+
+  .clients {
+    padding: 10rem 4rem;
+  }
+  .clients__pattern {
+    left: 0;
+  }
+  .clients__content {
+    grid-template-columns: repeat(5, 100px);
+  }
+  .clients__logo {
+    width: 100%;
   }
 }
 .container {
