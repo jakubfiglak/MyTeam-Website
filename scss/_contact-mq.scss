@@ -1,6 +1,7 @@
 @media #{$tablet} {
   .contact-main-content {
     padding: 5rem 12.6rem 11.2rem;
+    margin-block-start: 16rem;
 
     &__pattern {
       bottom: 0;
@@ -32,6 +33,28 @@
 
     .contact-form {
       padding: 0;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .contact-main-content {
+    margin-block-start: 17.8rem;
+    padding: 6.2rem 16.5rem 12rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__pattern-top {
+      top: 6.2rem;
+    }
+  }
+
+  .ask {
+    &__heading {
+      text-align: left;
+    }
+
+    &__subheading {
+      text-align: left;
     }
   }
 }
