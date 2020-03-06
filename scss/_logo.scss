@@ -8,3 +8,11 @@
     margin: 0 auto;
   }
 }
+
+@media #{$desktop} {
+  .logo {
+    &__img--small {
+      width: 160px;
+    }
+  }
+}

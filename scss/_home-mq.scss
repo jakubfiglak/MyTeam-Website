@@ -97,4 +97,48 @@
       transform: translateY(-50%);
     }
   }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 14.5rem 16.5rem;
+    gap: 12.5rem;
+
+    &__heading {
+      font-size: 4.8rem;
+      line-height: 1;
+      align-self: start;
+
+      &::before {
+        top: -5.4rem;
+        left: 0;
+      }
+    }
+
+    &__pattern {
+      top: 100%;
+      transform: translateY(-100%);
+    }
+  }
+
+  .quotes {
+    padding: 14.5rem 16.5rem;
+
+    &__heading {
+      font-size: 4.8rem;
+      line-height: 1;
+    }
+
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .contact {
+    padding: 7.6rem 26rem;
+
+    &__heading {
+      font-size: 4.8rem;
+      line-height: 1;
+    }
+  }
 }

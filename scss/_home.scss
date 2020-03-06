@@ -34,7 +34,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   overflow: hidden;
   background: $tertiary-color-light;
@@ -50,6 +50,7 @@
     @extend %section-heading;
     text-align: left;
     padding: 6.4rem 8rem 4.8rem 2.4rem;
+    position: relative;
 
     &::before {
       content: '';
@@ -57,7 +58,9 @@
       width: 50px;
       height: 4px;
       background: $primary-color-mid;
-      margin-block-end: 2.4rem;
+      position: absolute;
+      left: 2.4rem;
+      top: 3.6rem;
     }
   }
 
