@@ -12,5 +12,11 @@
     padding: 0;
     padding-inline-end: 5rem;
     text-align: left;
+
+    &--about {
+      font-size: 6.4rem;
+      line-height: 1.56;
+      padding-inline-end: 15rem;
+    }
   }
 }
