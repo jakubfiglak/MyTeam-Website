@@ -104,7 +104,7 @@ img {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-column: 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   overflow: hidden;
   background: #012f34;
@@ -118,6 +118,7 @@ img {
 .features__heading {
   text-align: left;
   padding: 6.4rem 8rem 4.8rem 2.4rem;
+  position: relative;
 }
 .features__heading::before {
   content: "";
@@ -125,7 +126,9 @@ img {
   width: 50px;
   height: 4px;
   background: #f67e7e;
-  margin-block-end: 2.4rem;
+  position: absolute;
+  left: 2.4rem;
+  top: 3.6rem;
 }
 .features__content {
   display: grid;
@@ -317,6 +320,11 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1440px) {
+  .logo__img--small {
+    width: 160px;
+  }
+}
 .welcome__pattern-right {
   position: absolute;
   width: 200px;
@@ -769,6 +777,44 @@ img {
     left: -100px;
     transform: translateY(-50%);
   }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 14.5rem 16.5rem;
+    gap: 12.5rem;
+  }
+  .features__heading {
+    font-size: 4.8rem;
+    line-height: 1;
+    align-self: start;
+  }
+  .features__heading::before {
+    top: -5.4rem;
+    left: 0;
+  }
+  .features__pattern {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  .quotes {
+    padding: 14.5rem 16.5rem;
+  }
+  .quotes__heading {
+    font-size: 4.8rem;
+    line-height: 1;
+  }
+  .quotes__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact {
+    padding: 7.6rem 26rem;
+  }
+  .contact__heading {
+    font-size: 4.8rem;
+    line-height: 1;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -805,6 +851,34 @@ img {
     justify-self: end;
     align-self: end;
     text-align: right;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4.8rem 16.5rem;
+  }
+  .footer__nav {
+    align-self: end;
+  }
+  .footer__address {
+    justify-self: start;
+    text-align: left;
+    padding: 0;
+  }
+  .footer__social {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+  }
+  .footer__text {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: end;
+  }
+  .footer__nav-link {
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 768px) {
