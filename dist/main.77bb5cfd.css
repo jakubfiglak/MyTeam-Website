@@ -52,31 +52,14 @@ img {
   align-items: center;
   padding: 4.8rem 2.4rem;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 6.4rem 4rem;
-  }
-}
 .header__btn {
   background: 0;
   border: 0;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
-  .header__btn {
-    display: none;
-  }
-}
 
 .main-heading {
   font-size: 4rem;
-}
-@media screen and (min-width: 768px) {
-  .main-heading {
-    font-size: 6.4rem;
-    line-height: 1;
-    padding: 0 15rem;
-  }
 }
 .main-heading__emphasize {
   color: #f67e7e;
@@ -97,6 +80,9 @@ img {
 }
 .welcome__text {
   padding-block-start: 1.8rem;
+}
+.welcome__pattern-left {
+  display: none;
 }
 .welcome__pattern {
   position: absolute;
@@ -637,11 +623,6 @@ img {
 .main-nav {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .main-nav {
-    display: block;
-  }
-}
 .main-nav__list {
   display: flex;
   justify-content: space-between;
@@ -660,6 +641,42 @@ img {
   font-size: 1.8rem;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 6.4rem 4rem;
+  }
+  .header__btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 7.3rem 16.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 6.4rem;
+    line-height: 1;
+    padding: 0 15rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-heading {
+    font-size: 10rem;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-nav__list-element--btn {
+    margin-inline-start: 57.7rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .welcome {
     height: 700px;
@@ -706,6 +723,24 @@ img {
   }
   .contact__heading {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .welcome__content {
+    flex-direction: row;
+    padding: 7.2rem 16.5rem;
+  }
+  .welcome__text {
+    font-size: 1.8rem;
+    padding: 0;
+  }
+  .welcome__pattern-left {
+    display: block;
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
   }
 }
 @media screen and (min-width: 768px) {

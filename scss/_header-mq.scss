@@ -1,0 +1,15 @@
+@media #{$tablet} {
+  .header {
+    padding: 6.4rem 4rem;
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .header {
+    padding: 7.3rem 16.5rem;
+  }
+}

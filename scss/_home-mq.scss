@@ -55,3 +55,26 @@
     }
   }
 }
+
+@media #{$desktop} {
+  .welcome {
+    &__content {
+      flex-direction: row;
+      padding: 7.2rem 16.5rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      padding: 0;
+    }
+
+    &__pattern-left {
+      display: block;
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: -100px;
+      transform: translateY(-50%);
+    }
+  }
+}

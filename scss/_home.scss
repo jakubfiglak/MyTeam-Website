@@ -13,6 +13,10 @@
     padding-block-start: 1.8rem;
   }
 
+  &__pattern-left {
+    display: none;
+  }
+
   &__pattern {
     position: absolute;
     width: 358px;
