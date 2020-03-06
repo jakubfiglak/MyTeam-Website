@@ -468,6 +468,7 @@ img {
   grid-template-columns: 1fr;
   gap: 5.6rem;
   padding-block-end: 8.8rem;
+  margin-block-start: 12.8rem;
 }
 .contact-main-content__pattern {
   position: absolute;
@@ -952,6 +953,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact-main-content {
     padding: 5rem 12.6rem 11.2rem;
+    margin-block-start: 16rem;
   }
   .contact-main-content__pattern {
     bottom: 0;
@@ -977,6 +979,23 @@ img {
   }
   .contact-main-content .contact-form {
     padding: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-main-content {
+    margin-block-start: 17.8rem;
+    padding: 6.2rem 16.5rem 12rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-main-content__pattern-top {
+    top: 6.2rem;
+  }
+
+  .ask__heading {
+    text-align: left;
+  }
+  .ask__subheading {
+    text-align: left;
   }
 }
 .container {
