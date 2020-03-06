@@ -50,6 +50,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding: 4.8rem 2.4rem;
 }
 .header__btn {
@@ -74,6 +78,9 @@ img {
   overflow: hidden;
   background: #014e56;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome__content {
   padding: 0 2.4rem;
