@@ -3,7 +3,8 @@
 @import 'header', 'headings', 'home', 'text', 'buttons', 'footer', 'logo',
   'about', 'contact', 'side-nav', 'main-nav';
 
-@import 'home-mq', 'footer-mq', 'about-mq', 'contact-mq';
+@import 'header-mq', 'headings-mq', 'main-nav-mq', 'home-mq', 'footer-mq',
+  'about-mq', 'contact-mq';
 
 .container {
   margin: 0 auto;

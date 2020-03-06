@@ -3,6 +3,9 @@
   overflow: hidden;
   background: $primary-color-dark;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__content {
     @extend %flex-column-center;
@@ -11,6 +14,10 @@
 
   &__text {
     padding-block-start: 1.8rem;
+  }
+
+  &__pattern-left {
+    display: none;
   }
 
   &__pattern {

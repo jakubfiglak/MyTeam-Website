@@ -1,12 +1,6 @@
 .main-heading {
   font-size: 4rem;
 
-  @media screen and (min-width: 768px) {
-    font-size: 6.4rem;
-    line-height: 1;
-    padding: 0 15rem;
-  }
-
   &__emphasize {
     color: $primary-color-mid;
   }

@@ -1,0 +1,15 @@
+@media #{$tablet} {
+  .main-nav {
+    display: block;
+  }
+}
+
+@media #{$desktop} {
+  .main-nav {
+    &__list-element {
+      &--btn {
+        margin-inline-start: 57.7rem;
+      }
+    }
+  }
+}
