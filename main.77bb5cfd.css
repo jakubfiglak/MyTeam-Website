@@ -406,13 +406,16 @@ img {
   border: 0;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: all 0.3s;
+}
+.dir-card__button:hover {
+  background: #79c8c7;
 }
 .dir-card__button--close {
   background: #79c8c7;
 }
-.dir-card__button:hover {
-  transform: translate(-50%, 50%) scale(1.05);
+.dir-card__button--close:hover {
+  background: #f67e7e;
 }
 .dir-card__button-icon {
   width: 1.6rem;
@@ -423,8 +426,9 @@ img {
 .dir-card__back {
   top: 0;
   left: 0;
-  opacity: 0;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
   position: absolute;
   padding: 3.5rem 2.4rem 6.3rem;
   background: #002529;
@@ -437,8 +441,14 @@ img {
   justify-content: center;
   margin-block-start: 2.4rem;
 }
+.dir-card__social-link {
+  margin: 0 1.2rem;
+}
 .dir-card__social-icon {
-  padding: 0 1.2rem;
+  transition: all 0.3s;
+}
+.dir-card__social-icon:hover {
+  fill: #f67e7e;
 }
 
 .clients {
