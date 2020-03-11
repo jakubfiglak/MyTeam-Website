@@ -20,5 +20,10 @@
     text-decoration: none;
     color: $primary-color-light;
     font-size: 1.8rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $primary-color-mid;
+    }
   }
 }

@@ -38,5 +38,13 @@
 
   &__social-link {
     margin: 0 0.8rem;
+
+    &:hover .footer__social-icon {
+      fill: $primary-color-mid;
+    }
+  }
+
+  &__social-icon {
+    transition: all 0.2s;
   }
 }
