@@ -252,6 +252,7 @@ img {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   transition: all 0.2s ease-in;
+  text-decoration: none;
 }
 .btn--primary-light {
   color: white;
@@ -310,6 +311,12 @@ img {
 }
 .footer__social-link {
   margin: 0 0.8rem;
+}
+.footer__social-link:hover .footer__social-icon {
+  fill: #f67e7e;
+}
+.footer__social-icon {
+  transition: all 0.2s;
 }
 
 .logo__img {
@@ -534,7 +541,6 @@ img {
   border-block-end: 1px solid white;
   padding: 0 0 1.7rem 1.4rem;
   transition: all 0.3s ease-in;
-  cursor: pointer;
 }
 .contact-form__input--textarea {
   resize: none;
@@ -655,6 +661,10 @@ img {
   text-decoration: none;
   color: white;
   font-size: 1.8rem;
+  transition: all 0.2s;
+}
+.main-nav__link:hover {
+  color: #f67e7e;
 }
 
 @media screen and (min-width: 768px) {
